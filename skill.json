@@ -1,0 +1,38 @@
+{
+  "name": "genpark-openapi-spec-mock-server-contract-validator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - OpenAPI v3 spec automated mock server and schema contract validator providing ephemeral sandbox endpoints and payload fuzzing.",
+  "author": "genpark",
+  "category": "api-tooling",
+  "tags": [
+    "openapi-spec",
+    "mock-server",
+    "schema-validation",
+    "contract-testing",
+    "api-fuzzing"
+  ],
+  "inputs": {
+    "openapi_spec_url": {
+      "type": "string"
+    },
+    "strict_schema_validation": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "mock_server_id": {
+      "type": "string"
+    },
+    "endpoints_mocked_count": {
+      "type": "integer"
+    },
+    "ephemeral_mock_base_url": {
+      "type": "string"
+    },
+    "fuzz_testing_harness_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
